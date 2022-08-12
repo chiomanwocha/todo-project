@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    background-color: aliceblue;
+}
+form{
+    max-width: 30vw;
+    background-color: yellowgreen;
+    padding: 20px 50px;
+    margin: 10vh auto;
+    box-shadow: 0 0 10px rgb(131, 131, 255);
+    background-color: #ffffff;
+    border-radius: 9px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    padding: 5px 0 20px;
+    align-items: center;
+}
+header>div:nth-child(2n) p{
+    display: inline-block;
+}
+header>div:nth-child(2n) p:first-child{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 10px;
+}
+header button{
+    
+    font-size: 20px;
+}
+main{
+    padding: 30px 0;
+}
+.add{
+    border: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.add input{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 90%;
+}
+.add button{
+    padding: 0;
+}
+.add button:hover{
+    color: blue;
+    font-weight: 600;
+    transition: .1s
+}
+h3{
+    margin-top: 20px;
+}
+ul li{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 3vw 20vw 5vw;
+    grid-template-rows: 100%;
+    align-items: center;
+}
+li input{
+    width: 20px;
+    height: 20px;
+}
+li button:hover{
+    color: red;
+    font-weight: 600;
+    transition: .1s
+}
+button{
+    padding: 10px;
+    background-color: #ffffff;
+    border: none;
+    outline:  none;
+    cursor: pointer;
+}
+.items{
+    border: none;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: scroll;
+}
+.items::-webkit-scrollbar-track
+{
+	border-radius: 16px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 20px;
+}
+.items::-webkit-scrollbar
+{
+	width: 11px;
+}
+
+.items::-webkit-scrollbar-thumb
+{
+    background-color:  rgb(131, 131, 255);
+	border-radius: 16px;
+}
+#completed-tasks label {
+	text-decoration: line-through;
+	color: #888;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form action="">
+        <header>
+            <div>
+                <button><span class="iconify" data-icon="akar-icons:arrow-left"></span></button>
+            </div>
+            <div>
+                <p>Thursday,</p>
+                <p>August 11th</p>
+            </div>
+            <div>
+                <button><span class="iconify" data-icon="akar-icons:arrow-left" data-flip="horizontal"></span></button>
+            </div>
+        </header>
+        <main>
+            <div class="add">
+                <input id="new-task" type="text">
+                <button id="add-button">Add</button>
+            </div>
+            <div class="items">
+                <h3>Todo</h3>
+                <ul id="incomplete-tasks">
+                    <li>
+                        <input type="checkbox">
+                        <label>Daily Standup</label>
+                        <button class="delete">Delete</button>
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        <label>Lunch with Lola</label>
+                        <button class="delete">Delete</button>
+                    </li>
+                </ul>
+        
+                <h3>Completed</h3>
+                <ul id="completed-tasks">
+                    <li>
+                        <input type="checkbox" checked>
+                        <label>Modify my add button functionality</label>
+                        <button class="delete">Delete</button>
+                    </li>
+                </ul>
+            </div>
+            
+        </main>
+    </form>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script src="todo.js"></script>
+</body>
+</html>
