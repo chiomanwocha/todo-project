@@ -17,14 +17,12 @@ form{
     border-radius: 9px;
 }
 header{
-    display: flex;
-    justify-content: space-between;
     border-bottom: 1px solid grey;
     padding: 5px 0 20px;
-    align-items: center;
 }
-header>div:nth-child(2n) p{
-    display: inline-block;
+h1{
+    text-align: center;
+    text-transform: uppercase;
 }
 header>div:nth-child(2n) p:first-child{
     text-transform: uppercase;
@@ -45,6 +43,7 @@ main{
     justify-content: space-between;
     padding: 10px;
     margin-bottom: 20px;
+    border-radius: 16px;
 }
 .add input{
     border: none;
@@ -111,4 +110,59 @@ button{
 #completed-tasks label {
 	text-decoration: line-through;
 	color: #888;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 18px;
+    }
+    .add{
+        border: none;
+        flex-direction: column;
+        padding: 0;
+    }
+    .add input {
+        border: 1px solid black;
+        width: 90%;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+    main {
+        padding: 20px 0;
+    }
+    .add button {
+        background-color: blue;
+        color: white;
+        border-radius: 5px;
+        margin: 5px auto;
+        width: 90%;
+    }
+    .add button:hover {
+        background-color: hsl(240, 100%, 70%);
+        color: white;
+    }
+    form {
+        max-width: 60vw;
+        padding: 20px 20px;
+    }
+    ul li {
+        grid-template-columns: 5vw 33vw 16vw;
+        gap: 4px;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    button {
+        padding: 8px;
+        background-color: rgb(255, 61, 61);
+        color:white;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: rgb(255, 95, 95);
+        color:white;
+    }
 }
